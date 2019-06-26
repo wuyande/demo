@@ -1,33 +1,41 @@
 # 持续集成使用报告
 
-## 阿里云持续交付平台CRP
+## 阿里云云效
 
-### 操作步骤
+### ci配置步骤
 
-#### 创建项目
+#### 前置条件: 
+1. 已经创建好项目
+2. 已经创建好代码仓库 支持的语言包括:
+- Java
+- NodeJS
+- PHP
+- Python
+- Go
+- 自定义镜像
 
-#### 创建工作流
-- 可选工作流:
-![Image text](./report/jpg/创建工作流.png)
-- 有python go php nodejs java 等模板
+#### 重点功能使用简介
+1. 创建流水线 流水线支持一下种类:
+2. 流水线触发条件存在三种方式：手动触发 自动触发 定时触发
+3. 自动触发配置代码仓库
+4. 支持以下输入源
+![Image text](./report/jpg/流水线输入源支持列表.png)
+5. github配置webhook后,github代码提交后会向云效发送POST请求，云效随后执行相应构建。
+6. githubwebhook配置
+![Image text](./report/jpg/githubwebhook配置.png)
+7. 可以在github上配置什么时候触发云效的构建
+8. 执行过程及结果，可以查看日志
+![Image text](./report/jpg/构建结果.png)
+9. 执行完成后可以下载产物 内容包含打包产物和启动脚本
+![Image text](./report/jpg/下载.png)
 
-#### 模板配置
+#### 使用总结
+##### 优点
+1. 功能健全,可以满足手动触发构建某个分支，定期构建分支，代码提交构建分支的要求。
+2. webhook配置说明不够详细。
+3. 触发功能丰富可以解决各种场景。
+4. 有一些构建后置任务可以配置。例如测试用执行红线，代码安全扫描以及安全规约扫描。
 
-##### 触发器配置
-
-###### 在代码仓库配置oauth集成
-- 代码仓库支持情况:
-![Image text](./report/jpg/git.png)
-- 集成外部仓库需要配置OAuth
-![Image text](./report/jpg/OAuth1.png)
-- 每一种代码仓库都有详细的集成步骤
-![Image text](./report/jpg/OAuth2.png)
-- 没看明白这个github配置为啥到后面又变成gitlab的配置，且github部分的配置和现在的github对不上。
-- 还支持直接导入代码仓库地址
-- 版本仓库必须使用 http://、https:// 或 git:// 访问。
-- 链接必须能公开访问或指定用户名和密码类似：https://username:password@gitlab.company.com/group/project.git
-- 发生了什么?
-![Image text](./report/jpg/500.png)
 ## 2. 华为云3
 
 
