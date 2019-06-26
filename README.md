@@ -28,7 +28,7 @@
 - 链接必须能公开访问或指定用户名和密码类似：https://username:password@gitlab.company.com/group/project.git
 - 发生了什么?
 ![Image text](./report/jpg/500.png)
-## 2. 华为云
+## 2. 华为云1
 
 
 ## 3. visual studio tests
