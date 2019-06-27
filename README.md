@@ -43,9 +43,38 @@
 3. 触发功能丰富可以解决各种场景。
 4. 有一些构建后置任务可以配置。例如测试用执行红线，代码安全扫描以及安全规约扫描。
 
-## 2. 华为云3
 ##### 缺点 
 1. 代码只支持码云和阿里云代码
 2. 虽然可以配置github自动触发但是，构建产物不能基于github代码构建。
 
-## 3. visual studio tests
+## 2. 华为云
+
+#### 基本步骤
+1. 基本信息配置
+
+2. 源代码配置
+
+![Image text](./report/jpg/华为云源代码支持.png)
+
+- 两点支持直接oauth一键认证github仓库。极其方便。赞！
+
+3. 配置构建模板 华为云支持的
+
+![Image text](./report/jpg/华为云模板1.png)
+
+![Image text](./report/jpg/华为云模板2.png)
+
+![Image text](./report/jpg/华为云模板3.png)
+
+4. 配置构建
+
+![Image text](./report/jpg/华为云构建配置.png)
+
+- 可以修改构建指令(黑框部分)
+- 可选工具版本
+
+5. 配置结果上传配置
+
+![Image text](./report/jpg/华为云上传构建.png)
+
+- 结果会上传到git代码仓库
