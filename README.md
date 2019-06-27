@@ -77,4 +77,13 @@
 
 ![Image text](./report/jpg/华为云上传构建.png)
 
-- 结果会上传到git代码仓库
+- 支持直接下载构建包
+
+6. 查看结果
+
+![Image text](./report/jpg/华为云结果.png)
+
+- 可以看日志
+- 在页面直接下载结果包
+
+
