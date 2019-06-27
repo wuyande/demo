@@ -19,14 +19,21 @@
 2. 流水线触发条件存在三种方式：手动触发 自动触发 定时触发
 3. 自动触发配置代码仓库
 4. 支持以下输入源
+
 ![Image text](./report/jpg/流水线输入源支持列表.png)
+
 5. github配置webhook后,github代码提交后会向云效发送POST请求，云效随后执行相应构建。
 6. githubwebhook配置
+
 ![Image text](./report/jpg/githubwebhook配置.png)
+
 7. 可以在github上配置什么时候触发云效的构建
 8. 执行过程及结果，可以查看日志
+
 ![Image text](./report/jpg/构建结果.png)
+
 9. 执行完成后可以下载产物 内容包含打包产物和启动脚本
+
 ![Image text](./report/jpg/下载.png)
 
 #### 使用总结
